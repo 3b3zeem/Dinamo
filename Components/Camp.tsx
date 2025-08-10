@@ -58,13 +58,13 @@ const Camp = () => {
     <section className="mx-auto 2xl:max-w-[1440px] xl:max-w-[1300px] flex flex-col lg:mb-10 py-20 xl:mb-20">
       <div className="hide-scrollbar flex h-[400px] w-full items-start justify-start gap-8 overflow-x-auto lg:h-[640px]">
         <CampSite
-          backgroundImage="url('/img-1.png')"
+          backgroundImage="url('/img-1.webp')"
           title="Putuk Truno Camp"
           subtitle="Prigen, Pasuruan"
           peopleJoined="50+ Joined"
         />
         <CampSite
-          backgroundImage="url('/img-2.png')"
+          backgroundImage="url('/img-2.webp')"
           title="Mountain View Camp"
           subtitle="Somewhere in the Wilderness"
           peopleJoined="50+ Joined"

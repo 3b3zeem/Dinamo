@@ -21,7 +21,7 @@ const Guide = () => {
 
       <div className="flex items-center justify-center mx-auto 2xl:max-w-[1440px] xl:max-w-[1300px] relative w-full max-h-[800px]">
         <Image
-          src="/boat.png"
+          src="/boat.webp"
           alt="boat"
           width={1440}
           height={1050}

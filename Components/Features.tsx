@@ -24,11 +24,11 @@ const FeatureItem = ({ title, icon, description }: FeatureItem) => {
 
 const Features = () => {
   return (
-    <section className="flex items-center justify-center flex-col overflow-hidden bg-[url('/feature-bg.png')] bg-center bg-no-repeat py-24">
+    <section className="flex items-center justify-center flex-col overflow-hidden bg-[url('/feature-bg.webp')] bg-center bg-no-repeat py-24">
       <div className="mx-auto 2xl:max-w-[1440px] xl:max-w-[1300px] px-6 lg:px-20 3xl:px-0 relative w-full flex justify-end">
         <div className="flex flex-1 lg:min-h-[900px]">
           <Image
-            src="/phone.png"
+            src="/phone.webp"
             alt="phone"
             width={440}
             height={1000}
