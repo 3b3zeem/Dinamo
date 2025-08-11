@@ -6,9 +6,9 @@ import React from "react";
 import { useLocale, useTranslations } from "use-intl";
 
 type FeatureItem = {
-  title: string;
+  titleKey: string;
   icon: string;
-  description: string;
+  descriptionKey: string;
 };
 
 const FeatureItem = ({ titleKey, icon, descriptionKey }: FeatureItem) => {
