@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap');
 @import "tailwindcss";
 
 body {
   font-family: 'Inter', sans-serif;
 }
+
 
 html[dir="rtl"] {
   font-family: 'Cairo', sans-serif;
@@ -30,4 +29,16 @@ aside h1 {
 .rtl {
   direction: rtl;
   text-align: right;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: black;
+}
+
+::-webkit-scrollbar-track {
+  background-color: white;
 }

@@ -12,12 +12,25 @@ const Hero = () => {
   return (
     <section className="mx-auto 2xl:max-w-[1440px] xl:max-w-[1300px] px-6 lg:px-20 3xl:px-0 flex flex-col gap-20 py-20 pb-32 mb-10 md:gap-28 lg:flex-row">
       <div
-        className={`absolute right-0 top-0 h-screen w-full bg-[url('/pattern-bg.webp')] bg-cover bg-center xl:-top-60 ${
+        className={`absolute right-0 top-0 h-screen w-full xl:-top-60 ${
           locale === "ar"
             ? "transform scale-x-[-1] md:-left-[100px] -left-28"
             : "md:-right-28"
         }`}
-      />
+      >
+        <Image
+          src="/pattern-bg.webp"
+          alt=""
+          fill
+          priority
+          quality={80}
+          sizes="100vw"
+          style={{
+            objectFit: "cover",
+            objectPosition: "center",
+          }}
+        />
+      </div>
 
       <div className="relative z-20 flex flex-1 flex-col xl:w-1/2">
         <Image
