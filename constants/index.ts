@@ -1,10 +1,10 @@
 // NAVIGATION
 export const NAV_LINKS = [
-  { href: "/", key: "home", label: "Home" },
-  { href: "/", key: "how_hilink_work", label: "How Hilink Work" },
-  { href: "/services", key: "services", label: "Services" },
-  { href: "/", key: "pricing", label: "Pricing" },
-  { href: "/", key: "contact_us", label: "Contact Us" },
+  { href: "/", key: "home", labelKey: "home" },
+  { href: "/how-hilink-work", key: "how_hilink_work", labelKey: "howHilinkWork" },
+  { href: "/services", key: "services", labelKey: "services" },
+  { href: "/pricing", key: "pricing", labelKey: "pricing" },
+  { href: "/contact-us", key: "contact_us", labelKey: "contactUs" },
 ];
 
 // CAMP SECTION
@@ -18,28 +18,28 @@ export const PEOPLE_URL = [
 // FEATURES SECTION
 export const FEATURES = [
   {
-    title: "Real maps can be offline",
+    titleKey: "realMapsOffline.title",
     icon: "/map.svg",
     variant: "green",
-    description: "We provide a solution for you to be able to use our application when climbing, yes offline maps you can use at any time there is no signal at the location",
+    descriptionKey: "realMapsOffline.description",
   },
   {
-    title: "Set an adventure schedule",
+    titleKey: "adventureSchedule.title",
     icon: "/calendar.svg",
     variant: "green",
-    description: "Schedule an adventure with friends. On holidays, there are many interesting offers from Hilink. That way, there's no more discussion",
+    descriptionKey: "adventureSchedule.description",
   },
   {
-    title: "Technology using augment reality",
+    titleKey: "augmentedReality.title",
     icon: "/tech.svg",
     variant: "green",
-    description: "Technology uses augmented reality as a guide to your hiking trail in the forest to the top of the mountain. Already supported by the latest technology without an internet connection",
+    descriptionKey: "augmentedReality.description",
   },
   {
-    title: "Many new locations every month",
+    titleKey: "newLocations.title",
     icon: "/location.svg",
     variant: "orange",
-    description: "Lots of new locations every month, because we have a worldwide community of climbers who share their best experiences with climbing",
+    descriptionKey: "newLocations.description",
   },
 ];
 
@@ -47,28 +47,28 @@ export const FEATURES = [
 export const FOOTER_LINKS = [
   {
     id: 1,
-    title: "Learn More",
-    links: [
-      "About Hilink",
-      "Press Releases",
-      "Environment",
-      "Jobs",
-      "Privacy Policy",
-      "Contact Us",
+    titleKey: "learnMore",
+    linksKeys: [
+      "aboutHilink",
+      "pressReleases",
+      "environment",
+      "jobs",
+      "privacyPolicy",
+      "contactUs",
     ],
   },
 ];
 
 export const FOOTER_CONTACT_INFO = {
-  title: "Contact Us",
+  titleKey: "contactUsTitle",
   links: [
-    { label: "Admin Officer", value: "123-456-7890" },
-    { label: "Email Officer", value: "hilink@akinthil.com" },
+    { labelKey: "adminOfficer", value: "123-456-7890" },
+    { labelKey: "emailOfficer", value: "hilink@akinthil.com" },
   ],
 };
 
 export const SOCIALS = {
-  title: "Social",
+  titleKey: "social",
   links: [
     "/facebook.svg",
     "/instagram.svg",

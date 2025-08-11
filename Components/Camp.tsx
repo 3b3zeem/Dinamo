@@ -1,4 +1,7 @@
+"use client";
+
 import { PEOPLE_URL } from "@/constants";
+import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
 import React from "react";
 
@@ -54,37 +57,48 @@ const CampSite = ({
 };
 
 const Camp = () => {
+  const t = useTranslations("camp");
+  const locale = useLocale();
+
   return (
     <section className="mx-auto 2xl:max-w-[1440px] xl:max-w-[1300px] flex flex-col lg:mb-10 py-20 xl:mb-20">
       <div className="hide-scrollbar flex h-[400px] w-full items-start justify-start gap-8 overflow-x-auto lg:h-[640px]">
         <CampSite
           backgroundImage="url('/img-1.webp')"
-          title="Putuk Truno Camp"
-          subtitle="Prigen, Pasuruan"
-          peopleJoined="50+ Joined"
+          title={t("putukTrunoCamp")}
+          subtitle={t("prigenPasuruan")}
+          peopleJoined={t("peopleJoined")}
         />
         <CampSite
           backgroundImage="url('/img-2.webp')"
-          title="Mountain View Camp"
-          subtitle="Somewhere in the Wilderness"
-          peopleJoined="50+ Joined"
+          title={t("mountainViewCamp")}
+          subtitle={t("somewhereWilderness")}
+          peopleJoined={t("peopleJoined")}
         />
       </div>
 
-      <div className="flex items-center justify-end mt-10 px-6 lg:-mt-60 lg:mr-6">
+      <div
+        className={`flex items-center  ${
+          locale === "ar" ? "justify-start" : "justify-end"
+        } mt-10 px-6 lg:-mt-35 lg:mr-6`}
+      >
         <div className="bg-[#585858] p-8 lg:max-w-[500px] xl:max-w-[734px] xl:rounded-5xl xl:px-16 xl:py-20 relative w-full overflow-hidden rounded-3xl">
           <h2 className="text-[24px] font-[400] md:text-[32px] 2xl:regular-64 capitalize text-white">
-            <strong>Feeling Lost And Not Knowing The Way?</strong>
+            <strong>{t("feelingLostTitle")}</strong>
           </h2>
           <p className="text-[14px] font-[400] xl:text-[16px] mt-5 text-white">
-            Starting from the anxiety of the climbers when visiting a new climbing location, the possibility of getting lost is very large. That's why we are here for those of you who want to start an adventure
+            {t("feelingLostDescription")}
           </p>
           <Image
             src="/quote.svg"
             alt="camp-2"
             width={186}
             height={219}
-            className="absolute -right-6 bottom-4 w-[140px] lg:bottom-10 xl:-right-8 xl:w-[186px] 2xl:right-0"
+            className={`absolute ${
+              locale === "ar"
+                ? "-left-6 xl:-left-8 2xl:left-0"
+                : "-right-6 xl:-right-8 2xl:right-0"
+            } bottom-4 w-[140px] lg:bottom-10  xl:w-[186px] `}
           />
         </div>
       </div>

@@ -5,10 +5,14 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import Button from "./Button";
+import LanguageSwitcher from "./LanguageSwitcher";
+import { useLocale, useTranslations } from "next-intl";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const t = useTranslations("nav");
+  const locale = useLocale();
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -38,7 +42,7 @@ const Navbar = () => {
         }`}
       >
         <div className="flex items-center justify-between mx-auto 2xl:max-w-[1440px] xl:max-w-[1300px]">
-          <Link href={`/`}>
+          <Link href={`/${locale}`}>
             <Image
               src={"/hilink-logo.svg"}
               alt="logo"
@@ -55,19 +59,12 @@ const Navbar = () => {
                 key={link.key}
                 className="relative text-[16px] font-[400] text-[#585858] flex items-center justify-center cursor-pointer pb-1.5 transition-all duration-150 hover:font-bold before:content-[''] before:absolute before:bottom-0 before:left-1/2 before:w-0 before:h-[2px] before:bg-black before:transition-all before:duration-300 before:ease-out hover:before:left-0 hover:before:w-full"
               >
-                {link.label}
+                {t(link.labelKey)}
               </Link>
             ))}
           </div>
 
-          <div className="lg:flex lg:items-center lg:justify-center hidden">
-            <Button
-              type="button"
-              title="Login"
-              icon="/user.svg"
-              variant="bg-[#292C27] px-8 py-3 text-white transition-all hover:bg-black"
-            />
-          </div>
+          <LanguageSwitcher />
 
           <Image
             src={"menu.svg"}
@@ -83,15 +80,15 @@ const Navbar = () => {
       {/* Overlay */}
       {isOpen && (
         <div
-          className="fixed inset-0 bg-black/40 backdrop-blur-sm z-40 lg:hidden"
+          className="fixed inset-0 bg-black/40 backdrop-blur-sm z-400 lg:hidden"
           onClick={() => setIsOpen(false)}
         ></div>
       )}
 
       {/* Sidebar */}
       <div
-        className={`fixed top-0 right-0 h-full bg-white shadow-lg transform transition-transform duration-300 z-50 lg:hidden ${
-          isOpen ? "translate-x-0 sm:w-[500px] w-[300px]" : "translate-x-full"
+        className={`fixed top-0 right-0 h-full bg-white shadow-lg transform transition-transform duration-300 z-500 lg:hidden ${
+          isOpen ? "-translate-x-0 sm:w-[500px] w-[300px]" : "translate-x-full"
         }`}
       >
         <div className="flex items-center justify-between p-4 border-b">
@@ -118,19 +115,14 @@ const Navbar = () => {
             <Link
               key={link.key}
               href={link.href}
-              className="relative text-[16px] font-[400] text-[#585858] cursor-pointer pb-1.5 transition-all duration-150 hover:font-bold before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[2px] before:bg-black before:transition-all before:duration-300 before:ease-out hover:before:left-0 hover:before:w-full"
+              className={`relative text-[16px] font-[400] text-[#585858] cursor-pointer pb-1.5 transition-all duration-150 hover:font-bold before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[2px] before:bg-black before:transition-all before:duration-300 before:ease-out hover:before:w-full ${
+                locale === "ar" ? "hover:before:right-0" : "hover:before:left-0"
+              }`}
               onClick={() => setIsOpen(false)}
             >
-              {link.label}
+              {t(link.labelKey)}
             </Link>
           ))}
-
-          <Button
-            type="button"
-            title="Login"
-            icon="/user.svg"
-            variant="bg-[#292C27] px-8 py-4 text-white transition-all hover:bg-black"
-          />
         </div>
       </div>
     </>

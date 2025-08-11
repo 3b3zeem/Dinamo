@@ -1,0 +1,80 @@
+{
+  "nav": {
+    "home": "Home",
+    "howHilinkWork": "How Hilink Work",
+    "services": "Services",
+    "pricing": "Pricing",
+    "contactUs": "Contact Us"
+  },
+  "hero": {
+    "title": "Get into the wild",
+    "description": "We want to be on each of your journeys seeking the satisfaction of seeing the incorruptible beauty of nature. We can help you on an adventure around the world in just one app",
+    "reviews": "reviews",
+    "downloadApp": "Download App",
+    "howWeWork": "How we work?",
+    "location": "Location",
+    "aguscabana": "Aguscabana",
+    "distance": "Distance",
+    "elevation": "Elevation",
+    "distanceValue": "173.28 mi",
+    "elevationValue": "2.040 km"
+  },
+  "camp": {
+    "putukTrunoCamp": "Putuk Truno Camp",
+    "prigenPasuruan": "Prigen, Pasuruan",
+    "mountainViewCamp": "Mountain View Camp",
+    "somewhereWilderness": "Somewhere in the Wilderness",
+    "peopleJoined": "50+ Joined",
+    "feelingLostTitle": "Feeling Lost And Not Knowing The Way?",
+    "feelingLostDescription": "Starting from the anxiety of the climbers when visiting a new climbing location, the possibility of getting lost is very large. That's why we are here for those of you who want to start an adventure"
+  },
+  "guide": {
+    "weAreHere": "We are here for you",
+    "guideTitle": "Guide You to Easy Path",
+    "guideDescription": "Only with the hilink application you will no longer get lost and get lost again, because we already support offline maps when there is no internet connection in the field. Invite your friends, relatives and friends to have fun in the wilderness through the valley and reach the top of the mountain",
+    "destination": "Destination",
+    "destinationTime": "48 min",
+    "aguasCalientes": "Aguas Calientes",
+    "startTrack": "Start track",
+    "wonorejoPasuruan": "Wonorejo Pasuruan"
+  },
+  "features": {
+    "realMapsOffline": {
+      "title": "Real maps can be offline",
+      "description": "We provide a solution for you to be able to use our application when climbing, yes offline maps you can use at any time there is no signal at the location"
+    },
+    "adventureSchedule": {
+      "title": "Set an adventure schedule",
+      "description": "Schedule an adventure with friends. On holidays, there are many interesting offers from Hilink. That way, there's no more discussion"
+    },
+    "augmentedReality": {
+      "title": "Technology using augment reality",
+      "description": "Technology uses augmented reality as a guide to your hiking trail in the forest to the top of the mountain. Already supported by the latest technology without an internet connection"
+    },
+    "newLocations": {
+      "title": "Many new locations every month",
+      "description": "Lots of new locations every month, because we have a worldwide community of climbers who share their best experiences with climbing"
+    },
+    "ourFeatures": "Our Features"
+  },
+  "getApp": {
+    "getForFree": "Get for free now!",
+    "availableOn": "Available on iOS and Android",
+    "appStore": "App Store",
+    "playStore": "Play Store"
+  },
+  "footer": {
+    "learnMore": "Learn More",
+    "aboutHilink": "About Hilink",
+    "pressReleases": "Press Releases",
+    "environment": "Environment",
+    "jobs": "Jobs",
+    "privacyPolicy": "Privacy Policy",
+    "contactUs": "Contact Us",
+    "contactUsTitle": "Contact Us",
+    "adminOfficer": "Admin Officer",
+    "emailOfficer": "Email Officer",
+    "social": "Social",
+    "copyright": "2023 Hilink | All rights reserved"
+  }
+}

@@ -1,20 +1,32 @@
+"use client";
+
 import Image from "next/image";
 import React from "react";
+import { useLocale, useTranslations } from "use-intl";
 
 const Guide = () => {
+  const t = useTranslations("guide");
+  const locale = useLocale();
+
   return (
     <section className="flex justify-center items-center flex-col">
       <div className="px-6 lg:px-20 3xl:px-0 mx-auto 2xl:max-w-[1440px] xl:max-w-[1300px] w-full pb-24">
-        <Image src="/camp.svg" alt="camp" width={50} height={50} className="w-12 h-auto" />
-        <p className="uppercase text-[18px] font-[400] mb-3 text-[#30AF5B]">
-          We are here for you
+        <Image
+          src="/camp.svg"
+          alt="camp"
+          width={50}
+          height={50}
+          className="w-12 h-auto"
+        />
+        <p className="uppercase text-[20px] font-[400] mb-3 text-[#30AF5B]">
+          {t("weAreHere")}
         </p>
         <div className="flex flex-wrap justify-between gap-5 lg:gap-10">
           <h2 className="text-[40px] font-[700] leading-[120%] lg:text-[64px] xl:max-w-[390px]">
-            Guide You to Easy Path
+            {t("guideTitle")}
           </h2>
           <p className="text-[16px] font-[400] text-[#7B7B7B] xl:max-w-[520px]">
-            Only with the hilink application you will no longer get lost and get lost again, because we already support offline maps when there is no internet connection in the field. Invite your friends, relatives and friends to have fun in the wilderness through the valley and reach the top of the mountain
+            {t("guideDescription")}
           </p>
         </div>
       </div>
@@ -28,7 +40,11 @@ const Guide = () => {
           className="w-full object-cover object-center sm:block hidden xl:rounded-[40px]"
         />
 
-        <div className="relative sm:absolute flex bg-white py-8 pl-5 pr-7 gap-3 rounded-3xl border shadow-md md:left-[5%] lg:top-20">
+        <div
+          className={`relative sm:absolute flex bg-white py-8 pl-5 pr-7 gap-3 rounded-3xl border shadow-md ${
+            locale === "ar" ? "md:right-[5%]" : "md:left-[5%]"
+          } lg:top-20`}
+        >
           <Image
             src="/meter.svg"
             alt="meter"
@@ -40,19 +56,23 @@ const Guide = () => {
             <div className="flex w-full flex-col">
               <div className="flex items-center justify-between w-full">
                 <p className="text-[16px] font-[400] text-[#A2A2A2]">
-                  Destination
+                  {t("destination")}
                 </p>
-                <p className="text-[16px] font-[700] text-[#585858]">48 min</p>
+                <p className="text-[16px] font-[700] text-[#585858]">
+                  {t("destinationTime")}
+                </p>
               </div>
-              <p className="text-[20px] font-[700] mt-2">Aguas Calientes</p>
+              <p className="text-[20px] font-[700] mt-2">
+                {t("aguasCalientes")}
+              </p>
             </div>
 
             <div className="flex w-full flex-col">
               <p className="text-[16px] font-[400] text-[#A2A2A2]">
-                Start track
+                {t("startTrack")}
               </p>
               <h4 className="text-[20px] font-[700] mt-2 whitespace-nowrap">
-                Wonorejo Pasuruan
+                {t("wonorejoPasuruan")}
               </h4>
             </div>
           </div>
