@@ -41,14 +41,14 @@ const Navbar = () => {
             : "bg-transparent py-4"
         }`}
       >
-        <div className="flex items-center justify-between mx-auto 2xl:max-w-[1440px] xl:max-w-[1300px]">
+        <div className="flex items-center justify-between mx-auto 2xl:max-w-[1440px] xl:max-w-[1300px] px-6 lg:px-20 3xl:px-0 ">
           <Link href={`/${locale}`}>
             <Image
-              src={"/hilink-logo.svg"}
+              src={"/dinamo-transparent.png"}
               alt="logo"
               width={74}
               height={29}
-              className="w-20 h-auto"
+              className="w-22 h-auto"
             />
           </Link>
 
