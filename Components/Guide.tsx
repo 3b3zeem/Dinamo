@@ -18,7 +18,7 @@ const Guide = () => {
           height={50}
           className="w-12 h-auto"
         />
-        <p className="uppercase text-[20px] font-[400] mb-3 text-[#30AF5B]">
+        <p className="uppercase text-[20px] font-[600] mb-3 text-[#FFC107]">
           {t("weAreHere")}
         </p>
         <div className="flex flex-wrap justify-between gap-5 lg:gap-10">

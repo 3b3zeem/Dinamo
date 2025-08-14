@@ -1,10 +1,11 @@
 {
   "nav": {
     "home": "Home",
-    "howDinamoWork": "How Dinamo Work",
+    "about": "About us",
     "services": "Services",
+    "reviews": "Reviews",
     "pricing": "Pricing",
-    "contactUs": "Contact Us"
+    "contactUs": "Contact us"
   },
   "hero": {
     "title": "Get into the wild",
@@ -76,5 +77,14 @@
     "emailOfficer": "Email Officer",
     "social": "Social",
     "copyright": "2023 Hilink | All rights reserved"
+  },
+  "reviews": {
+    "title": "Customer Reviews",
+    "viewAll": "View All Reviews",
+    "ali": { "name": "Ali", "comment": "Amazing app for camping adventures!" },
+    "sara": { "name": "Sara", "comment": "Great offline maps, very helpful." },
+    "mohamed": { "name": "Mohamed", "comment": "Best travel companion ever!" },
+    "fatima": { "name": "Fatima", "comment": "Love the AR features." },
+    "omar": { "name": "Omar", "comment": "Reliable and user-friendly." }
   }
 }

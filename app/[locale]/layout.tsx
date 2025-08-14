@@ -22,11 +22,13 @@ export default async function RootLayout({
   children: React.ReactNode;
   params: Promise<{ locale: string }>;
 }) {
-  const { locale } = await params;
+  const { locale: rawLocale } = await params;
+
+  const locale = ["ar", "en"].includes(rawLocale) ? rawLocale : "ar";
 
   let messages;
   try {
-    if (!["en", "ar"].includes(locale)) {
+    if (!["ar", "en"].includes(locale)) {
       notFound();
     }
     messages = (await import(`../../locales/${locale}.json`)).default;
@@ -35,17 +37,14 @@ export default async function RootLayout({
   }
 
   return (
-    <html
-      lang={locale}
-      className={locale === "ar" ? cairo.className : inter.className}
-      dir={locale === "ar" ? "rtl" : "ltr"}
-    >
-      <body>
+    <html lang={locale} dir={locale === "ar" ? "rtl" : "ltr"}>
+      <body
+        suppressHydrationWarning={true}
+        className={locale === "ar" ? cairo.className : inter.className}
+      >
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Navbar />
-          <main className="relative overflow-hidden">
-            {children}
-          </main>
+          <main className="relative overflow-hidden">{children}</main>
           <Footer />
         </NextIntlClientProvider>
       </body>

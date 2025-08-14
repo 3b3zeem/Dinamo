@@ -76,8 +76,8 @@ const Hero = () => {
           <Button
             type="button"
             title={t("downloadApp")}
-            icon="/play.svg"
-            variant="border-[#292C27] bg-[#292C27] px-8 py-5 text-white hover:bg-[#30af5b] hover:border-[#30af5b] transition-all"
+            icon=""
+            variant="border-[#FFC107] bg-[#FFC107] text-[#212121] px-8 py-3 hover:bg-[#FFC101] hover:text-white transition-all"
           />
           <Button
             type="button"

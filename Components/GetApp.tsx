@@ -23,13 +23,13 @@ const GetApp = () => {
               type="button"
               title={t("appStore")}
               icon="/apple.svg"
-              variant="border-white bg-white px-8 py-3 text-[#30AF5B] hover:opacity-90 transition-all duration-200"
+              variant="border-white bg-white px-8 py-3 text-[#100000] hover:opacity-90 hover:text-[#FFC107] transition-all duration-200"
             />
             <Button
               type="button"
               title={t("playStore")}
               icon="/android.svg"
-              variant="border-[#A2A2A2] bg-transparent px-8 py-5 text-white hover:bg-[#30AF5B] hover:border-[#30AF5B] transition-all duration-200"
+              variant="border-[#A2A2A2] bg-transparent px-8 py-5 text-white hover:bg-[#FFC107] hover:border-[#FFC107] transition-all duration-200"
             />
           </div>
         </div>

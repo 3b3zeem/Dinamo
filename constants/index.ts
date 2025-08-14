@@ -1,10 +1,11 @@
 // NAVIGATION
 export const NAV_LINKS = [
   { href: "/", key: "home", labelKey: "home" },
-  { href: "/", key: "how_dinamo_work", labelKey: "howDinamoWork" },
+  { href: "/about", key: "about", labelKey: "about" },
   { href: "/", key: "services", labelKey: "services" },
+  { href: "/reviews", key: "reviews", labelKey: "reviews" },
   // { href: "/", key: "pricing", labelKey: "pricing" },
-  { href: "/", key: "contact_us", labelKey: "contactUs" },
+  { href: "/contact", key: "contact_us", labelKey: "contactUs" },
 ];
 
 // CAMP SECTION
@@ -40,6 +41,45 @@ export const FEATURES = [
     icon: "/location.svg",
     variant: "orange",
     descriptionKey: "newLocations.description",
+  },
+];
+
+// REVIEWS SECTION
+export const REVIEWS = [
+  {
+    id: 1,
+    nameKey: "ali.name",
+    rating: 5,
+    commentKey: "ali.comment",
+    avatar: "/person-1.webp",
+  },
+  {
+    id: 2,
+    nameKey: "sara.name",
+    rating: 4,
+    commentKey: "sara.comment",
+    avatar: "/person-2.webp",
+  },
+  {
+    id: 3,
+    nameKey: "mohamed.name",
+    rating: 5,
+    commentKey: "mohamed.comment",
+    avatar: "/person-3.webp",
+  },
+  {
+    id: 4,
+    nameKey: "fatima.name",
+    rating: 5,
+    commentKey: "fatima.comment",
+    avatar: "/person-4.webp",
+  },
+  {
+    id: 5,
+    nameKey: "omar.name",
+    rating: 4,
+    commentKey: "omar.comment",
+    avatar: "/person-5.webp",
   },
 ];
 

@@ -93,7 +93,7 @@ const Navbar = () => {
       >
         <div className="flex items-center justify-between p-4 border-b">
           <Image
-            src="/hilink-logo.svg"
+            src="/dinamo-transparent.webp"
             alt="logo"
             width={74}
             height={29}

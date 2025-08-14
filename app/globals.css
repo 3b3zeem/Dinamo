@@ -33,7 +33,7 @@ h1 {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: black;
+  background-color: #212121;
 }
 
 ::-webkit-scrollbar-track {
