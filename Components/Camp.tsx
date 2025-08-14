@@ -26,7 +26,7 @@ const CampSite = ({
       <div className="flex h-full flex-col items-start justify-between p-6 lg:px-20 lg:py-10">
         <div className="flex items-center justify-center gap-4">
           <div className="rounded-full bg-[#585858] p-4">
-            <Image src="/folded-map.svg" alt="map" width={28} height={28} />
+            <Image src="/folded-map.svg" alt="map" width={28} height={28} priority />
           </div>
           <div className="flex flex-col gap-1">
             <h4 className="text-[18px] font-[700] text-white">{title}</h4>
@@ -44,6 +44,7 @@ const CampSite = ({
                 alt="person"
                 width={52}
                 height={52}
+                priority
               />
             ))}
           </span>
@@ -94,6 +95,7 @@ const Camp = () => {
             alt="camp-2"
             width={186}
             height={219}
+            priority
             className={`absolute ${
               locale === "ar"
                 ? "-left-6 xl:-left-8 2xl:left-0"

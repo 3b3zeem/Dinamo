@@ -17,6 +17,7 @@ const Guide = () => {
           width={50}
           height={50}
           className="w-12 h-auto"
+          priority
         />
         <p className="uppercase text-[20px] font-[600] mb-3 text-[#FFC107]">
           {t("weAreHere")}
@@ -38,6 +39,7 @@ const Guide = () => {
           width={1440}
           height={1050}
           className="w-full object-cover object-center sm:block hidden xl:rounded-[40px]"
+          priority
         />
 
         <div
@@ -51,6 +53,7 @@ const Guide = () => {
             width={16}
             height={158}
             className="h-full w-auto"
+            priority
           />
           <div className="flex items-center justify-between flex-col">
             <div className="flex w-full flex-col">

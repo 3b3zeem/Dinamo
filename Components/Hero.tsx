@@ -38,6 +38,7 @@ const Hero = () => {
           alt="camp"
           width={50}
           height={50}
+          priority
           className={`absolute  top-[-33px] w-10 lg:w-[50px] ${
             locale === "ar" ? "right-[-5px]" : "left-[-5px]"
           }`}
@@ -60,6 +61,7 @@ const Hero = () => {
                   alt="star"
                   width={24}
                   height={24}
+                  priority
                 />
               ))}
           </div>
@@ -99,7 +101,7 @@ const Hero = () => {
               <p className="text-[16px] font-[400] text-[#A2A2A2]">
                 {t("location")}
               </p>
-              <Image src="/close2.svg" alt="close" width={24} height={24} />
+              <Image src="/close2.svg" alt="close" width={24} height={24} priority />
             </div>
             <p className="text-[20px] font-[700] text-white">
               {t("aguscabana")}

@@ -20,6 +20,7 @@ const Footer = () => {
               width={74}
               height={29}
               className="w-22 h-auto"
+              priority
             />
           </Link>
 
@@ -68,6 +69,7 @@ const Footer = () => {
                         width={24}
                         height={24}
                         className="w-7 h-auto"
+                        priority
                       />
                     </Link>
                   ))}

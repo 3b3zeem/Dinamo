@@ -32,6 +32,7 @@ const ReviewCard = ({
             width={50}
             height={50}
             className="rounded-full object-cover"
+            priority
           />
           <div>
             <h4 className="text-[18px] font-[700] leading-tight text-black">{t(nameKey)}</h4>
@@ -48,6 +49,7 @@ const ReviewCard = ({
                   alt="star"
                   width={24}
                   height={24}
+                  priority
                 />
               </span>
             ))}
@@ -72,6 +74,7 @@ const Reviews = ({ limit = REVIEWS.length }: ReviewsProps) => {
           alt="camp"
           width={50}
           height={50}
+          priority
           className={`absolute top-[-30px] w-10 lg:w-[50px] ${
             locale === "ar" ? "right-[-5px]" : "left-[-5px]"
           }`}

@@ -4,7 +4,6 @@ import { NAV_LINKS } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import Button from "./Button";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { useLocale, useTranslations } from "next-intl";
 
@@ -49,6 +48,7 @@ const Navbar = () => {
               width={74}
               height={29}
               className="w-22 h-auto"
+              priority
             />
           </Link>
 
@@ -73,6 +73,7 @@ const Navbar = () => {
             height={32}
             onClick={() => setIsOpen(true)}
             className="inline-block cursor-pointer lg:hidden"
+            priority
           />
         </div>
       </div>
@@ -98,6 +99,7 @@ const Navbar = () => {
             width={74}
             height={29}
             className="w-20 h-auto"
+            priority
           />
           <button onClick={() => setIsOpen(false)}>
             <Image
@@ -106,6 +108,7 @@ const Navbar = () => {
               width={24}
               height={24}
               className="cursor-pointer rounded-full"
+              priority
             />
           </button>
         </div>

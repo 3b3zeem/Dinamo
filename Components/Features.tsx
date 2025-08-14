@@ -16,7 +16,7 @@ const FeatureItem = ({ titleKey, icon, descriptionKey }: FeatureItem) => {
   return (
     <li className="flex w-full flex-1 flex-col items-start">
       <div className="rounded-full p-4 lg:p-7 bg-[#585858]">
-        <Image src={icon} alt="map" width={28} height={28} />
+        <Image src={icon} alt="map" width={28} height={28} priority />
       </div>
       <h2 className="text-[20px] font-[700] lg:text-[32px] mt-5 capitalize">
         {t(titleKey)}
@@ -42,6 +42,7 @@ const Features = () => {
             width={440}
             height={1000}
             className="feature-phone"
+            priority
           />
         </div>
 
@@ -52,6 +53,7 @@ const Features = () => {
               alt="camp"
               width={50}
               height={50}
+              priority
               className={`absolute top-[-30px] w-10 lg:w-[50px] ${
                 locale === "ar" ? "right-[-5px]" : "left-[-5px]"
               }`}
