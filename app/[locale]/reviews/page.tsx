@@ -1,45 +1,30 @@
-import Reviews from "@/Components/Reviews";
+import React from "react";
 import { generateSEO } from "@/lib/seoConfig";
+import { PageProps } from "@/.next/types/app/page";
 
-export const generateMetadata = async ({
-  params,
-}: {
-  params: Promise<{ locale: string }>;
-}) => {
+export const generateMetadata = async ({ params }: PageProps) => {
   const { locale } = await params;
 
   return generateSEO({
     locale,
-    title:
-      locale === "ar"
-        ? "آراء وتقييمات العملاء | Dinamo"
-        : "testimonials | Dinamo",
+    title: locale === "ar" ? "التقييمات | شركتنا" : "Reviews | Dinamo",
     description:
       locale === "ar"
-        ? "اطلع على تجارب وآراء عملائنا حول خدمات ومنتجات Dinamo."
-        : "Read what our customers say about Dinamo’s products and services.",
+        ? "اقرأ آراء عملائنا عن خدماتنا ومنتجاتنا."
+        : "Read what our customers say about our services and products.",
     keywords:
       locale === "ar"
-        ? ["تقييمات", "آراء العملاء", "Dinamo", "مراجعات", "تجارب العملاء"]
-        : [
-            "reviews",
-            "customer feedback",
-            "Dinamo",
-            "testimonials",
-            "customer experience",
-          ],
+        ? ["التقييمات", "آراء العملاء", "خدماتنا", "منتجاتنا"]
+        : ["reviews", "customer feedback", "services", "products"],
     path: "/reviews",
   });
 };
 
-export default function ReviewsPage({
-  params,
-}: {
-  params: { locale: string };
-}) {
+export default async function ReviewsPage({ params }: PageProps) {
+  const { locale } = await params;
   return (
-    <main className="relative overflow-hidden">
-      <Reviews />
+    <main className="relative overflow-hidden mx-auto 2xl:max-w-[1440px] xl:max-w-[1300px] px-6 lg:px-20 3xl:px-0 py-12">
+      {locale === "ar" ? "التقييمات" : "Reviews"}
     </main>
   );
 }
