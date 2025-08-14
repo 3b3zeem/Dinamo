@@ -23,7 +23,7 @@ export const generateMetadata = async ({
   });
 };
 
-export default async function ContactPage({
+export default function ContactPage({
   params,
 }: {
   params: { locale: string };
