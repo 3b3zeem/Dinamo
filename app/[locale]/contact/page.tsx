@@ -2,9 +2,9 @@ import React from "react";
 import { generateSEO } from "@/lib/seoConfig";
 
 type PageProps = {
-  params: {
+  params: Promise<{
     locale: string;
-  };
+  }>;
 };
 
 export const generateMetadata = async ({ params }: PageProps) => {
