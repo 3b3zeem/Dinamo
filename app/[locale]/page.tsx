@@ -6,12 +6,14 @@ import Hero from "@/Components/Hero";
 import Reviews from "@/Components/Reviews";
 import { generateSEO } from "@/lib/seoConfig";
 
-export const generateMetadata = async ({
-  params,
-}: {
-  params: { locale: string };
-}) => {
-  const { locale } = params;
+type PageProps = {
+  params: Promise<{
+    locale: string;
+  }>;
+};
+
+export const generateMetadata = async ({ params }: PageProps ) => {
+  const { locale } = await params;
 
   return generateSEO({
     locale,
