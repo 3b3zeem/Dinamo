@@ -1,12 +1,9 @@
 import React from "react";
 import { generateSEO } from "@/lib/seoConfig";
+import { PageProps } from "@/.next/types/app/page";
 
-export const generateMetadata = async ({
-  params,
-}: {
-  params: { locale: string };
-}) => {
-  const { locale } = params;
+export const generateMetadata = async ({ params }: PageProps) => {
+  const { locale } = await params;
 
   return generateSEO({
     locale,
@@ -23,8 +20,9 @@ export const generateMetadata = async ({
   });
 };
 
-export default function AboutPage({ params }: { params: { locale: string } }) {
-  const { locale } = params;
+export default async function AboutPage({ params }: PageProps) {
+  const { locale } = await params;
+
   return (
     <main className="relative overflow-hidden mx-auto 2xl:max-w-[1440px] xl:max-w-[1300px] px-6 lg:px-20 3xl:px-0 py-12">
       {locale === "ar" ? "معلومات عنا" : "About Us"}
