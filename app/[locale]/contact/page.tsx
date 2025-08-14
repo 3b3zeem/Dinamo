@@ -4,9 +4,9 @@ import React from "react";
 export const generateMetadata = async ({
   params,
 }: {
-  params: Promise<{ locale: string }>;
+  params: { locale: string };
 }) => {
-  const { locale } = await params;
+  const { locale } = params;
 
   return generateSEO({
     locale,
@@ -28,7 +28,8 @@ export default async function ContactPage({
 }: {
   params: { locale: string };
 }) {
-  const { locale } = await params;
+  const { locale } = params;
+
   return (
     <main className="relative overflow-hidden mx-auto 2xl:max-w-[1440px] xl:max-w-[1300px] px-6 lg:px-20 3xl:px-0 py-12">
       {locale === "ar" ? "اتصل بنا" : "Contact Us"}

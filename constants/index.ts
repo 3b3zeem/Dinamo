@@ -79,7 +79,7 @@ export const REVIEWS = [
     nameKey: "omar.name",
     rating: 4,
     commentKey: "omar.comment",
-    avatar: "/person-5.webp",
+    avatar: "/person-4.webp",
   },
 ];
 
