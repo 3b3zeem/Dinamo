@@ -1,5 +1,6 @@
 import React from "react";
 import { generateSEO } from "@/lib/seoConfig";
+import Reviews from "@/Components/Reviews";
 
 type PageProps = {
   params: Promise<{
@@ -26,10 +27,9 @@ export const generateMetadata = async ({ params }: PageProps) => {
 };
 
 export default async function ReviewsPage({ params }: PageProps) {
-  const { locale } = await params;
   return (
-    <main className="relative overflow-hidden mx-auto 2xl:max-w-[1440px] xl:max-w-[1300px] px-6 lg:px-20 3xl:px-0 py-12">
-      {locale === "ar" ? "التقييمات" : "Reviews"}
+    <main className="relative overflow-hidden mx-auto 2xl:max-w-[1440px] xl:max-w-[1300px] px-6 3xl:px-0 py-12">
+      <Reviews />
     </main>
   );
 }

@@ -15,7 +15,7 @@ const Footer = () => {
         <div className="flex flex-col items-start justify-center gap-[10%] md:flex-row">
           <Link href="/" className="mb-10">
             <Image
-              src="/dinamo-transparent.png"
+              src="/dinamo-transparent.webp"
               alt="logo"
               width={74}
               height={29}
