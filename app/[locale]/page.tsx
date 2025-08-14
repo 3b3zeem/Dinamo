@@ -9,9 +9,9 @@ import { generateSEO } from "@/lib/seoConfig";
 export const generateMetadata = async ({
   params,
 }: {
-  params: Promise<{ locale: string }>;
+  params: { locale: string };
 }) => {
-  const { locale } = await params;
+  const { locale } = params;
 
   return generateSEO({
     locale,
