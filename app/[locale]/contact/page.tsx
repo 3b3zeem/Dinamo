@@ -1,6 +1,11 @@
-import { PageProps } from "@/.next/types/app/page";
-import { generateSEO } from "@/lib/seoConfig";
 import React from "react";
+import { generateSEO } from "@/lib/seoConfig";
+
+type PageProps = {
+  params: {
+    locale: string;
+  };
+};
 
 export const generateMetadata = async ({ params }: PageProps) => {
   const { locale } = await params;
