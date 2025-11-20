@@ -28,7 +28,7 @@ const Services = () => {
   return (
     <section className="mx-auto w-full py-20 relative">
       <div className="flex w-full h-[100%] flex-col justify-between gap-30">
-        <div className="flex flex-col items-center gap-8 px-6 lg:px-20 3xl:px-0">
+        <div className="flex flex-col items-center gap-8 px-6 lg:px-20 3xl:px-0 md:z-0 z-10">
           <h2 className="font-[IBMSansArabicSemiBold] text-[#202020] text-[45px] md:text-[67px] !leading-[88px]">
             {t("title")} <span className="text-[#FFB636]">{t("title2")}</span>{" "}
             ✨
@@ -69,7 +69,7 @@ const Services = () => {
 
         {/* corn image */}
         <div
-          className={`absolute md:top-60 top-90 z-10 ${
+          className={`absolute md:top-60 top-90 md:z-10 z-0 ${
             locale === "ar" ? "right-0" : "left-0 scale-x-[-1]"
           }`}
         >
