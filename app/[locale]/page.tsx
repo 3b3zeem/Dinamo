@@ -1,8 +1,8 @@
-import Camp from "@/Components/Camp";
+import Hero from "@/Components/Hero";
+import Services from "@/Components/Services";
 import Features from "@/Components/Features";
 import GetApp from "@/Components/GetApp";
 import Guide from "@/Components/Guide";
-import Hero from "@/Components/Hero";
 import Reviews from "@/Components/Reviews";
 import { generateSEO } from "@/lib/seoConfig";
 
@@ -34,7 +34,7 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <Camp />
+      <Services />
       <Guide />
       <Features />
       <Reviews limit={4} />

@@ -67,7 +67,7 @@ const Reviews = ({ limit = REVIEWS.length }: ReviewsProps) => {
   const locale = useLocale();
 
   return (
-    <section className="mx-auto 2xl:max-w-[1440px] xl:max-w-[1300px] flex flex-col py-20 px-6 lg:px-20">
+    <section className="mx-auto 2xl:max-w-[1440px] xl:max-w-[1300px] flex flex-col pb-20 px-6 lg:px-20">
       <div className="relative mb-10">
         <Image
           src="/camp.svg"

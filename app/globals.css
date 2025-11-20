@@ -4,6 +4,30 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
+@font-face {
+  font-family: "IBMSansArabicRegular";
+  src: url("/fonts/IBMPlexSansArabic-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "IBMSansArabicMedium";
+  src: url("/fonts/IBMPlexSansArabic-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "IBMSansArabicSemiBold";
+  src: url("/fonts/IBMPlexSansArabic-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+}
+
+
+@font-face {
+  font-family: "IBMSansArabicBold";
+  src: url("/Fonts/IBMPlexSansArabic-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
 
 html[dir="rtl"] {
   font-family: 'Cairo', sans-serif;
@@ -33,7 +57,7 @@ h1 {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #212121;
+  background-color: #FFB636;
 }
 
 ::-webkit-scrollbar-track {

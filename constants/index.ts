@@ -1,19 +1,11 @@
 // NAVIGATION
 export const NAV_LINKS = [
   { href: "/", key: "home", labelKey: "home" },
+  { href: "/services", key: "services", labelKey: "services" },
+  { href: "/prices", key: "prices", labelKey: "prices" },
   { href: "/about", key: "about", labelKey: "about" },
-  { href: "/", key: "services", labelKey: "services" },
   { href: "/reviews", key: "reviews", labelKey: "reviews" },
-  // { href: "/", key: "pricing", labelKey: "pricing" },
-  { href: "/contact", key: "contact_us", labelKey: "contactUs" },
-];
-
-// CAMP SECTION
-export const PEOPLE_URL = [
-  "/person-1.webp",
-  "/person-2.webp",
-  "/person-3.webp",
-  "/person-4.webp",
+  { href: "/faq", key: "faq", labelKey: "faq" },
 ];
 
 // FEATURES SECTION
@@ -82,37 +74,3 @@ export const REVIEWS = [
     avatar: "/person-4.webp",
   },
 ];
-
-// FOOTER SECTION
-export const FOOTER_LINKS = [
-  {
-    id: 1,
-    titleKey: "learnMore",
-    linksKeys: [
-      "aboutHilink",
-      "pressReleases",
-      "environment",
-      "jobs",
-      "privacyPolicy",
-      "contactUs",
-    ],
-  },
-];
-
-export const FOOTER_CONTACT_INFO = {
-  titleKey: "contactUsTitle",
-  links: [
-    { labelKey: "adminOfficer", value: "123-456-7890" },
-    { labelKey: "emailOfficer", value: "hilink@akinthil.com" },
-  ],
-};
-
-export const SOCIALS = {
-  titleKey: "social",
-  links: [
-    "/facebook.svg",
-    "/instagram.svg",
-    "/twitter.svg",
-    "/youtube.svg",
-  ],
-};

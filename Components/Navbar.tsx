@@ -34,20 +34,20 @@ const Navbar = () => {
     <>
       {/* Navbar */}
       <div
-        className={`sticky top-0 left-0 w-full z-50 transition-all duration-300 px-6 lg:px-20 3xl:px-0 ${
+        className={`sticky top-0 left-0 w-full z-50 transition-all duration-300 px-6 lg:px-20 3xl:px-0 shadow-sm ${
           isScrolled
             ? "bg-white/60 backdrop-blur-lg shadow-md py-5"
             : "bg-transparent py-4"
         }`}
       >
-        <div className="flex items-center justify-between mx-auto 2xl:max-w-[1440px] xl:max-w-[1300px] px-6 lg:px-20 3xl:px-0 ">
+        <div className="flex items-center justify-between mx-auto 2xl:max-w-[1440px] xl:max-w-[1300px]">
           <Link href={`/${locale}`}>
             <Image
               src={"/dinamo-transparent.webp"}
               alt="logo"
               width={74}
               height={29}
-              className="w-22 h-auto"
+              className="w-25 h-auto"
               priority
             />
           </Link>
@@ -57,7 +57,11 @@ const Navbar = () => {
               <Link
                 href={link.href}
                 key={link.key}
-                className="relative text-[16px] font-[400] text-[#585858] flex items-center justify-center cursor-pointer pb-1.5 transition-all duration-150 hover:font-bold before:content-[''] before:absolute before:bottom-0 before:left-1/2 before:w-0 before:h-[2px] before:bg-black before:transition-all before:duration-300 before:ease-out hover:before:left-0 hover:before:w-full"
+                className={`relative text-[19px] font-[IBMSansArabicSemiBold] !leading-[20px] flex items-center justify-center cursor-pointer pb-1.5 transition-all duration-150 hover:font-bold before:content-[''] before:absolute before:bottom-0 before:left-1/2 before:w-0 before:h-[2px] before:transition-all before:duration-300 before:ease-out hover:before:left-0 hover:before:w-full ${
+                  link.key === "home"
+                    ? "text-[#FFB636] before:bg-[#FFB636]"
+                    : "text-[#374151] before:bg-[#374151]"
+                }`}
               >
                 {t(link.labelKey)}
               </Link>

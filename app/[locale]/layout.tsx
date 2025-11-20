@@ -37,7 +37,7 @@ export default async function RootLayout({
   }
 
   return (
-    <html lang={locale} dir={locale === "ar" ? "rtl" : "ltr"}>
+    <html lang={locale} dir={locale === "ar" ? "rtl" : "ltr"} suppressHydrationWarning>
       <body
         suppressHydrationWarning={true}
         className={locale === "ar" ? cairo.className : inter.className}

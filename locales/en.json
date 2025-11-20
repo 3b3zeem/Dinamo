@@ -1,24 +1,36 @@
 {
   "nav": {
     "home": "Home",
-    "about": "About us",
+    "about": "About Dinamo",
     "services": "Services",
+    "prices": "Pricing",
     "reviews": "Reviews",
-    "pricing": "Pricing",
-    "contactUs": "Contact us"
+    "faq": "Frequently Asked Questions (FAQ)"
   },
   "hero": {
-    "title": "Get into the wild",
-    "description": "We want to be on each of your journeys seeking the satisfaction of seeing the incorruptible beauty of nature. We can help you on an adventure around the world in just one app",
-    "reviews": "reviews",
-    "downloadApp": "Download App",
-    "howWeWork": "How we work?",
-    "location": "Location",
-    "aguscabana": "Aguscabana",
-    "distance": "Distance",
-    "elevation": "Elevation",
-    "distanceValue": "173.28 mi",
-    "elevationValue": "2.040 km"
+    "title": "START",
+    "title2": "YOUR TRIP",
+    "minSpan": "WITH",
+    "span": "DINAMO",
+    "description": "With Dinamo, reach anywhere or the airport faster and safer, straight from your city. Transparent prices, zero surprises. Travel with total peace of mind — speed, comfort, and safety, all in one ride.",
+    "downloadApp": "Download the App Now"
+  },
+  "service": {
+    "title": "Best",
+    "title2": "Our Services",
+    "description": "Your trip with Dinamo begins with confidence and comfort. We provide essential transportation services that ensure you reach your destination safely, on time, and without any worries.",
+    "instant": {
+      "title": "Instant Booking",
+      "desc": "Travel between cities and governorates comfortably and safely"
+    },
+    "scheduled": {
+      "title": "Scheduled Booking",
+      "desc": "Plan your trips early and book easily"
+    },
+    "airport": {
+      "title": "Airport Rides",
+      "desc": "Stay on time and never miss your flight with pre-booking"
+    }
   },
   "camp": {
     "putukTrunoCamp": "Putuk Truno Camp",
@@ -59,24 +71,19 @@
     "ourFeatures": "Our Features"
   },
   "getApp": {
-    "getForFree": "Get for free now!",
-    "availableOn": "Available on iOS and Android",
-    "appStore": "App Store",
-    "playStore": "Play Store"
+    "getForFree": "Download the app and enjoy the service",
+    "availableOn": "Whether from the airport or another city, we guarantee your comfort and safety.",
+    "playStore": "Get the app now"
   },
   "footer": {
-    "learnMore": "Learn More",
-    "aboutHilink": "About Hilink",
-    "pressReleases": "Press Releases",
-    "environment": "Environment",
-    "jobs": "Jobs",
-    "privacyPolicy": "Privacy Policy",
-    "contactUs": "Contact Us",
-    "contactUsTitle": "Contact Us",
-    "adminOfficer": "Admin Officer",
-    "emailOfficer": "Email Officer",
-    "social": "Social",
-    "copyright": "2023 Hilink | All rights reserved"
+    "home": "Home",
+    "services": "Services",
+    "prices": "Prices",
+    "about": "About Dinamo",
+    "faq": "Frequently Asked Questions (FAQ)",
+    "copyright": "© 2025 All rights reserved by Dinamo",
+    "privacy": "Privacy",
+    "terms": "Terms & Conditions"
   },
   "reviews": {
     "title": "Customer Reviews",
