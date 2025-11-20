@@ -28,8 +28,8 @@ const Services = () => {
   return (
     <section className="mx-auto w-full py-20 relative">
       <div className="flex w-full h-[100%] flex-col justify-between gap-30">
-        <div className="flex flex-col items-center gap-8">
-          <h2 className="font-[IBMSansArabicSemiBold] text-[#202020] text-[67px] !leading-[88px]">
+        <div className="flex flex-col items-center gap-8 px-6 lg:px-20 3xl:px-0">
+          <h2 className="font-[IBMSansArabicSemiBold] text-[#202020] text-[45px] md:text-[67px] !leading-[88px]">
             {t("title")} <span className="text-[#FFB636]">{t("title2")}</span>{" "}
             ✨
           </h2>
@@ -38,13 +38,13 @@ const Services = () => {
           </h2>
         </div>
 
-        <div className="w-full flex justify-center gap-8 flex-wrap p-4">
+        <div className="w-full flex justify-center gap-8 flex-wrap p-4 px-6 lg:px-20 3xl:px-0">
           {services.map((s, index) => (
             <motion.div
               key={index}
               whileHover={{ scale: 1.02 }}
             >
-              <div className="w-[388px] h-[220px] shadow-[4px_11px_35px_rgba(0,0,0,0.07)] rounded-[16px] px-5 flex flex-col items-start justify-center gap-4 bg-white">
+              <div className="md:w-[388px] w-[300px] h-[220px] md:py-0 py-5 shadow-[4px_11px_35px_rgba(0,0,0,0.07)] rounded-[16px] px-5 flex flex-col items-start justify-center gap-4 bg-white">
                 {/* Image */}
                 <div className="p-2 rounded-xl bg-[#FFB636] shadow-[4px_11px_35px_rgba(0,0,0,0.01)] ">
                   <Image
@@ -69,7 +69,7 @@ const Services = () => {
 
         {/* corn image */}
         <div
-          className={`absolute top-60 z-10 ${
+          className={`absolute md:top-60 top-90 z-10 ${
             locale === "ar" ? "right-0" : "left-0 scale-x-[-1]"
           }`}
         >
