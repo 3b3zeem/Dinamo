@@ -5,10 +5,12 @@ import React from "react";
 import Button from "./Button";
 import { useLocale, useTranslations } from "next-intl";
 
-const Guide = () => {
+interface GuideProps {}
+
+const Guide: React.FC<GuideProps> = () => {
   const t = useTranslations("guide");
   const locale = useLocale();
-  const features = t.raw("features");
+  const features: string[] = t.raw("features");
 
   return (
     <section className="w-full h-auto lg:h-[100vh] flex flex-col-reverse lg:flex-row items-center justify-between gap-20 py-20 relative overflow-hidden">
