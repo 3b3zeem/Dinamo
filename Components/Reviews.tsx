@@ -71,15 +71,15 @@ const Reviews = () => {
   const locale = useLocale();
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  const [sliderRef, slider] = useKeenSlider({
+  const [sliderRef, slider] = useKeenSlider<HTMLDivElement>({
     loop: true,
     slides: { perView: 1 },
     mode: "snap",
-    duration: 600,
     slideChanged(s) {
       setCurrentSlide(s.track.details.rel);
     },
   });
+  
 
   return (
     <section className="py-20 px-6 lg:px-20 relative">
@@ -158,9 +158,9 @@ const Reviews = () => {
         {REVIEWS.map((_, idx) => (
           <button
             key={idx}
-            onClick={() => slider?.current?.moveToIdx(idx)}
+            onClick={() => slider?.current?.moveToIdx(idx, true)}
             className={`w-2 h-2 rounded-full cursor-pointer ${
-              currentSlide === idx ? "bg-orange-500 w-4" : "bg-gray-300"
+              currentSlide === idx ? "bg-[#FFB636] w-4" : "bg-[#525252]"
             }`}
           />
         ))}
