@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const ReviewCard = ({
   nameKey,
@@ -79,6 +79,16 @@ const Reviews = () => {
       setCurrentSlide(s.track.details.rel);
     },
   });
+
+  useEffect(() => {
+    if (!slider) return;
+
+    const interval = setInterval(() => {
+      slider.current?.next();
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, [slider]);
   
 
   return (
