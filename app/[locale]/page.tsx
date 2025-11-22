@@ -37,7 +37,7 @@ export default function Home() {
       <Services />
       <Guide />
       <Booking />
-      <Reviews limit={4} />
+      <Reviews />
       <GetApp />
     </>
   );
