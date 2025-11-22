@@ -5,71 +5,60 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
 
-const Services: React.FC = () => {
-  const t = useTranslations("service");
+const Booking: React.FC = () => {
+  const t = useTranslations("booking");
   const locale = useLocale();
 
-  interface ServiceItem {
+  interface BookingItem {
+    label: string;
+    base: boolean;
     key: string;
-    icon: string;
   }
 
-  const services: ServiceItem[] = [
-    {
-      key: "airport",
-      icon: "/services/direc.svg",
-    },
-    {
-      key: "scheduled",
-      icon: "/services/car.svg",
-    },
-    {
-      key: "instant",
-      icon: "/services/moment.svg",
-    },
+  const Bookings: BookingItem[] = [
+    { label: "01", base: true, key: "1" },
+    { label: "02", base: false, key: "2" },
+    { label: "03", base: false, key: "3" },
   ];
 
   return (
-    <section className="mx-auto w-full py-20 relative">
+    <section className="mx-auto w-full py-20 relative bg-[#F9F9F9]">
       <div className="flex w-full h-[100%] flex-col justify-between gap-25">
         <div className="flex flex-col items-center gap-8 px-6 lg:px-20 3xl:px-0 md:z-0 z-10">
           <h2 className="font-[IBMSansArabicSemiBold] text-[#202020] text-[45px] md:text-[67px] !leading-[88px]">
-            {t("title")} <span className="text-[#FFB636]">{t("title2")}</span>{" "}
-            ✨
+            {t("title")}{" "}
           </h2>
-          <h2 className="font-[IBMSansArabicRegular] text-[#525252] text-[16px] !leading-[24px]">
+          <h2 className="font-[IBMSansArabicSemiRegular] text-[#525252] text-[20px] !leading-[24px]">
             {t("description")}
           </h2>
         </div>
 
         <div className="w-full flex justify-center gap-8 flex-wrap p-4 px-6 lg:px-20 3xl:px-0">
-          {services.map((s, index) => (
-            <motion.div
-              key={index}
-              whileHover={{ scale: 1.02 }}
-            >
+          {Bookings.map((book: BookingItem, index: number) => (
+            <motion.div key={index} whileHover={{ scale: 1.02 }}>
               <div className="md:w-[388px] w-[300px] h-[220px] md:py-0 py-5 shadow-[4px_11px_35px_rgba(0,0,0,0.07)] rounded-[16px] px-5 flex flex-col items-start justify-center gap-4 bg-white">
-                {/* Image */}
-                <div className="p-2 rounded-xl bg-[#FFB636] shadow-[4px_11px_35px_rgba(0,0,0,0.01)] ">
-                  <Image
-                    src={s.icon}
-                    alt={t(`${s.key}.title`)}
-                    width={45}
-                    height={45}
-                    draggable={false}
-                    priority
-                  />
-                </div>
+                {/* label */}
+                <span
+                  className={`font-[IBMSansArabicSemiBold] text-[50px] !leading-[56px] mb-2 ${
+                    book.base ? "text-[#FFB636]" : "text-[#E2E2E2]"
+                  }`}
+                >
+                  {book.label}
+                </span>
                 {/* title */}
-                <h3 className="font-[IBMSansArabicSemiBold] text-[28px] !leading-[32px]">{t(`${s.key}.title`)}</h3>
+                <h3 className="font-[IBMSansArabicSemiBold] text-[28px] !leading-[32px]">
+                  {t(`${book.key}.title`)}
+                </h3>
                 {/* description */}
                 <p className="font-[IBMSansArabicRegular] text-[16px] !leading-[24px] text-[#525252]">
-                  {t(`${s.key}.desc`)}
+                  {t(`${book.key}.desc`)}
                 </p>
               </div>
             </motion.div>
           ))}
         </div>
+
+        
 
         {/* corn image */}
         <div
@@ -108,4 +97,4 @@ const Services: React.FC = () => {
   );
 };
 
-export default Services;
+export default Booking;

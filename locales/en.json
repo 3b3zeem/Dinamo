@@ -8,10 +8,10 @@
     "faq": "Frequently Asked Questions (FAQ)"
   },
   "hero": {
-    "title": "START",
-    "title2": "YOUR TRIP",
-    "minSpan": "WITH",
-    "span": "DINAMO",
+    "title": "Start",
+    "title2": "Your Trip",
+    "minSpan": "With",
+    "span": "Dinamo",
     "description": "With Dinamo, reach anywhere or the airport faster and safer, straight from your city. Transparent prices, zero surprises. Travel with total peace of mind — speed, comfort, and safety, all in one ride.",
     "downloadApp": "Download the App Now"
   },
@@ -32,43 +32,33 @@
       "desc": "Stay on time and never miss your flight with pre-booking"
     }
   },
-  "camp": {
-    "putukTrunoCamp": "Putuk Truno Camp",
-    "prigenPasuruan": "Prigen, Pasuruan",
-    "mountainViewCamp": "Mountain View Camp",
-    "somewhereWilderness": "Somewhere in the Wilderness",
-    "peopleJoined": "50+ Joined",
-    "feelingLostTitle": "Feeling Lost And Not Knowing The Way?",
-    "feelingLostDescription": "Starting from the anxiety of the climbers when visiting a new climbing location, the possibility of getting lost is very large. That's why we are here for those of you who want to start an adventure"
-  },
   "guide": {
-    "weAreHere": "We are here for you",
-    "guideTitle": "Guide You to Easy Path",
-    "guideDescription": "Only with the hilink application you will no longer get lost and get lost again, because we already support offline maps when there is no internet connection in the field. Invite your friends, relatives and friends to have fun in the wilderness through the valley and reach the top of the mountain",
-    "destination": "Destination",
-    "destinationTime": "48 min",
-    "aguasCalientes": "Aguas Calientes",
-    "startTrack": "Start track",
-    "wonorejoPasuruan": "Wonorejo Pasuruan"
+    "title": "We’ve Got You Covered",
+    "span": "with",
+    "minSpan": "Seriously Covered",
+    "description": "Your airport trip is no joke. With Dynamo, we make sure you arrive right on time without stress or worries. From the moment you book until you reach your destination, everything is calculated to the minute.",
+    "features": [
+      "✔️ Full commitment to schedules",
+      "✔️ Safety and comfort throughout the journey",
+      "✔️ Easy pre-booking without complications"
+    ],
+    "downloadApp": "Download the App Now"
   },
-  "features": {
-    "realMapsOffline": {
-      "title": "Real maps can be offline",
-      "description": "We provide a solution for you to be able to use our application when climbing, yes offline maps you can use at any time there is no signal at the location"
+  "booking": {
+    "title": "How to book with Dinamo?",
+    "description": "It's super easy in 3 steps",
+    "1": {
+      "title": "Download the app",
+      "desc": "The app is available on mobile in seconds."
     },
-    "adventureSchedule": {
-      "title": "Set an adventure schedule",
-      "description": "Schedule an adventure with friends. On holidays, there are many interesting offers from Hilink. That way, there's no more discussion"
+    "2": {
+      "title": "Log in",
+      "desc": "Simple steps, without any hassle."
     },
-    "augmentedReality": {
-      "title": "Technology using augment reality",
-      "description": "Technology uses augmented reality as a guide to your hiking trail in the forest to the top of the mountain. Already supported by the latest technology without an internet connection"
-    },
-    "newLocations": {
-      "title": "Many new locations every month",
-      "description": "Lots of new locations every month, because we have a worldwide community of climbers who share their best experiences with climbing"
-    },
-    "ourFeatures": "Our Features"
+    "3": {
+      "title": "Book your ride",
+      "desc": "Choose your trip and be assured you'll arrive on time."
+    }
   },
   "getApp": {
     "getForFree": "Download the app and enjoy the service",
@@ -87,11 +77,31 @@
   },
   "reviews": {
     "title": "Customer Reviews",
-    "viewAll": "View All Reviews",
-    "ali": { "name": "Ali", "comment": "Amazing app for camping adventures!" },
-    "sara": { "name": "Sara", "comment": "Great offline maps, very helpful." },
-    "mohamed": { "name": "Mohamed", "comment": "Best travel companion ever!" },
-    "fatima": { "name": "Fatima", "comment": "Love the AR features." },
-    "omar": { "name": "Omar", "comment": "Reliable and user-friendly." }
+    "description": "With Dinamo, your travel is safe and comfortable without worrying about schedules. People have tried our services from airport trips to intercity rides, and they all agree that Dynamo is the choice that arrives on time.",
+    "ali": {
+      "name": "Ali",
+      "comment": "Great app for camping adventures!",
+      "customer": "Customer"
+    },
+    "sara": {
+      "name": "Sara",
+      "comment": "Offline maps are amazing, very useful.",
+      "customer": "Customer"
+    },
+    "mohamed": {
+      "name": "Mohamed",
+      "comment": "The best travel companion ever!",
+      "customer": "Customer"
+    },
+    "fatima": {
+      "name": "Fatima",
+      "comment": "I love the augmented reality features.",
+      "customer": "Customer"
+    },
+    "omar": {
+      "name": "Omar",
+      "comment": "Reliable and easy to use.",
+      "customer": "Customer"
+    }
   }
 }

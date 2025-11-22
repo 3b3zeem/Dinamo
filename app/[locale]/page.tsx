@@ -1,10 +1,10 @@
 import Hero from "@/Components/Hero";
 import Services from "@/Components/Services";
-import Features from "@/Components/Features";
 import GetApp from "@/Components/GetApp";
 import Guide from "@/Components/Guide";
 import Reviews from "@/Components/Reviews";
 import { generateSEO } from "@/lib/seoConfig";
+import Booking from "@/Components/Booking";
 
 type PageProps = {
   params: Promise<{
@@ -36,7 +36,7 @@ export default function Home() {
       <Hero />
       <Services />
       <Guide />
-      <Features />
+      <Booking />
       <Reviews limit={4} />
       <GetApp />
     </>

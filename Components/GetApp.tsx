@@ -10,9 +10,9 @@ const GetApp = () => {
   const locale = useLocale();
 
   return (
-    <section className="flex items-center justify-center w-full flex-col py-45">
-      <div className="mx-auto 2xl:max-w-[1440px] xl:max-w-[1300px] px-6 lg:px-20 3xl:px-0 relative flex w-full flex-col justify-between bg-[url('/pattern.webp')] bg-cover bg-center bg-no-repeat bg-[#FFB636] py-12 text-white sm:flex-row sm:gap-12 sm:py-24 xl:max-h-[598px] rounded-[20px]">
-        <div className="z-20 flex w-full flex-1 flex-col items-start justify-center gap-12">
+    <section className="flex items-center justify-center w-full py-45 px-6 lg:px-20 3xl:px-0">
+      <div className="mx-auto px-6 lg:px-20 3xl:px-0 relative flex w-full flex-col justify-between bg-[url('/pattern.webp')] bg-cover bg-center bg-no-repeat bg-[#FFB636] py-12 text-white lg:flex-row sm:gap-12 sm:py-24 xl:max-h-[598px] rounded-[20px]">
+        <div className="z-20 flex w-full flex-1 flex-col items-start justify-center gap-12 order-2 lg:order-1">
           <h2 className="text-[57px] font-[IBMSansArabicSemiBold] !leading-[88px] xl:max-w-[520px]">
             {t("getForFree")}
           </h2>
@@ -30,7 +30,7 @@ const GetApp = () => {
         </div>
 
         <div
-          className={`flex flex-1 items-center justify-end ${
+          className={`flex flex-1 items-center justify-center lg:justify-end order-1   lg:order-2 ${
             locale === "ar" ? "pl-10" : "pr-10"
           }`}
         >
